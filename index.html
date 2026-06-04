@@ -23,7 +23,7 @@
     <section>
       <h2 id="sobre">Sobre mim</h2>
 
-      <img src="img/eu.jpeg" alt="Meu perfil" title="Imagem de perfil"/>
+      <img src="img/eu.jpeg" alt="Meu perfil" title="Imagem de perfil" />
 
       <article>
         <p>olá! Eu sou a Pietra, desenvolvedora web.</p>
@@ -58,9 +58,40 @@
 
         <p>Tem um projeto em mente? Entre em contato!</p>
         <address>
-          E-mail: <a href="mailto: pietrakrugerandrade@gmail.com">pietrakrugerandrade@gmail.com</a> <br>
+          E-mail:
+          <a href="mailto: pietrakrugerandrade@gmail.com"
+            >pietrakrugerandrade@gmail.com</a
+          >
+          <br />
           Telefone: <a href="tel: +55 (48)99942-2575">(48)99942-2575</a>
         </address>
+
+        <form action="">
+          <input type="text" name="nome" id="nome" required/><br />
+          <label for="nome">Nome: </label>
+
+          <input type="email" name="email" id="email" required/><br />
+          <label for="email">Email: </label>
+
+          <input type="telefone" name="telefone" id="telefone" required/><br />
+          <label for="telefone">Telefone: </label>
+
+          <label for="assunto">Assunto: </label>
+          <select name="assunto" id="assunto">
+          <option value="orcamento">Orçamento</option>
+          <option value="duvida">Dúvida</option>
+          <option value="outro">Outro</option>
+          </select><br>
+
+          <label for="mensagem">Mensagem: </label>
+          <textarea name="mensagem" id="mensagem" cols="30" rows="10"></textarea><br>
+
+          <input type="checkbox" name="inscricao" id="inscricao">
+          <label for="inscricao">Deseja receber minha newsLetter? Fique por dentro.</label><br>
+
+          <input type="submit" value="Enviar mensagem" required>
+
+        </form>
       </section>
     </footer>
   </body>
