@@ -1,39 +1,32 @@
-* {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-font-family: Arial, Helvetica, sans-serif;
+/* p{
+    border: 5px solid black;
 }
 
-p {
-    color: blueviolet;
-    font-family: 'Courier New', Courier, monospace;
+.block{
+display: block;
 }
 
-a{
-    color: crimson;
+.inline{
+display: inline-block;
+margin-top: 20px;
+} */
+
+.block{
+    display: block;
+    height: 200px;
+    background-color: blueviolet;
+    border: 1px solid black;
 }
 
-#habilidades{
-    font-weight: bold;
+.inline{
+display: inline;
+background-color: aqua;
+border: 1px solid black;
 }
 
-.h2{
-    color: blue;
-}
-
-section + h2 {
-color: rgb(255, 0, 0);
-}
-
-th ~ tr{
-    color: aqua;
-}
-
-ul > li{
-    color: rgb(255, 0, 242);
-}
-
-article p{
-    color: rgb(0, 255, 21);
+.inline-block{
+display: inline-block;
+background-color: brown;
+border: 1px solid black;
+margin-top: 30px;
 }
