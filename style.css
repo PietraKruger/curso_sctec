@@ -1,32 +1,71 @@
-/* p{
-    border: 5px solid black;
+/* body{
+  padding: 20px;  
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-.block{
-display: block;
+.img-flutuante{
+ float: left;  
+ width: 100px; 
+ margin-right: 10px;
+ margin-bottom: 5px;
 }
 
-.inline{
-display: inline-block;
-margin-top: 20px;
+.subtitulo{
+    clear: both;
 } */
 
-.block{
-    display: block;
-    height: 200px;
-    background-color: blueviolet;
-    border: 1px solid black;
+/* .header{
+background-color: blueviolet;
+position: sticky;
+position: -webkit-sticky;
+top: 0;
+border: 1px solid black;
+padding: 10px;
+font-size: 20px;
 }
 
-.inline{
-display: inline;
+.relativo{
+    position: relative;
+    height: 100px;
+    background-color: aqua;
+}
+
+.absoluto{
+    position: absolute;
+    height: 100px;
+    background-color: rgb(0, 255, 13);
+    top: 0px;
+    right: 10px;
+    width: 20px;
+}
+
+.fixed{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+} */
+
+.container{
+  display: grid; 
+  grid-template-columns: 1fr 3fr; 
+  grid-template-rows: auto 1fr;
+}
+
+.header{
+grid-column: 1 / -1;
+background-color: rgb(9, 255, 0);
+padding: 20px;
+}
+
+.sidebar{
 background-color: aqua;
-border: 1px solid black;
+padding: 20px;
 }
 
-.inline-block{
-display: inline-block;
-background-color: brown;
-border: 1px solid black;
-margin-top: 30px;
+.content{
+background-color: rgb(0, 68, 255);
+padding: 20px;
 }
