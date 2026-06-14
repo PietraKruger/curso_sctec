@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aula js</title>
+    <title>Aula Js</title>
     <script src="script.js"></script>
 </head>
 <body>
-    <h1>Calculadora</h1>
-    <label>digite a nota do aluno:</label>
-    <input type="number" id="nota"/>
-    <button onclick="verificaAprovacao()">Verificar nota</button>
-    <p id="resultado"></p>
+  <h1>Calculadora</h1> 
+  <p>Opradores válidos: +, -, *, /</p>
+  <input type="number" id="num1" placeholder="Digite o primeiro número:">
+  <input type="number" id="num2" placeholder="Digite o segundo número:">
+  <input type="text" id="operador" placeholder="Digite o operador:">
+  <button onclick="efetuaOperacao()">efetuar operação</button>
+  <p id="resultado"></p>
 </body>
 </html>

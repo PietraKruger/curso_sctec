@@ -1,16 +1,35 @@
-function verificaAprovacao()
-{
-    let nota = document.getElementById("nota").value;
-    console.log("Nota inserida: ",nota);
+function efetuaOperacao(){
 
-if (nota >= 7) {
-    document.getElementById("resultado").innerHTML = "Aluno(a) aprovado(a)";
-    alert("Aluno(a) aprovado(a)");
-} 
+    let num1 = parseFloat(document.getElementById("num1").value);
+    let num2 = parseFloat(document.getElementById("num2").value);
+    let operador = document.getElementById("operador").value;
 
-else {
-   document.getElementById("resultado").innerHTML = "Aluno(a) reprovado(a)";
-   alert("Aluno(a) reprovado(a)");
+    switch (operador) {
+
+        case "+":
+            resultado = num1 + num2;
+            break;
+
+            case "-":
+            resultado = num1 - num2;
+            break;
+
+            case "*":
+            resultado = num1 * num2;
+            break;
+
+            case "/":
+                if (num2 == 0) {
+                    resultado = "Divisão por 0 é inválida!";
+                } 
+                else {
+                    resultado = num1 / num2;
+                }
+            break;
+    
+        default:
+            resultado = "Operador inválido"
+            break;
+    }
+    document.getElementById("resultado").innerHTML = "Resultado:" + resultado;
 }
-
-};
