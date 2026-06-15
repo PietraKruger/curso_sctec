@@ -1,0 +1,16 @@
+/* label,button {
+    display: block;
+    margin-top: 10px;
+} */
+
+button {
+    margin: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input {
+    margin-top: 20px;
+    padding: 20px;
+    font-size: 16px;
+}

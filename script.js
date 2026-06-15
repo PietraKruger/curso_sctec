@@ -1,35 +1,17 @@
-// function mostrarSaudacao(){
-// const nome = document.getElementById("nome").value;
-// const hora = parseInt(document.getElementById("hora").value,10);
-// const mensagem = document.getElementById("mensagem");
-// mensagem.innerHTML = saudacaoPersonalizada(nome,hora);
-// }
+const celulas = document.querySelectorAll(".celula");
+let vezDoX = true;
+document.getElementById("reiniciar").addEventListener("click",iniciarJogo);
 
-// function saudacaoPersonalizada(nome,hora){
-//     if (hora < 12) {
-
-//         return "bom dia, " + nome + "!";
-//     } 
-//     else if (hora > 12 && hora < 18) {
-
-//         return "boa tarde," + nome + "!";
-//     }
-//     else if (hora > 18) {
-
-//         return "boa noite," + nome + "!";
-//     }
-//     else {
-//         return "";
-//     }
-// }
-function setBackgroundColor(color){
-    document.body.style.backgroundColor = color;
+function iniciarJogo(){
+    celulas.forEach(celula =>{
+        celula.textContent = "";
+        celula.addEventListener("click", tratarClick, {once:true});
+    })
 }
 
-document.getElementById("pinkButton").addEventListener("click",function(){setBackgroundColor("pink");});
-document.getElementById("purpleButton").addEventListener("click",function(){setBackgroundColor("purple");});
-document.getElementById("blueButton").addEventListener("click",function(){setBackgroundColor("blue");});
+function tratarClick(evento){
+    evento.target.textContent = vezDoX ? "X" : "O";
+    vezDoX = !vezDoX;
+}
 
-document.getElementById("inputBox").addEventListener("keypress", function(event){
-    alert("Tecla pressionada:" + event.key);
-});
+iniciarJogo();
